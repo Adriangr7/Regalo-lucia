@@ -1,0 +1,244 @@
+body.contenido {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 20;
+    padding: 0;
+    background-image: url('rosa.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+h1 {
+    color: #0ae5ed;
+    text-align: center;
+    margin-top: 2%;
+    font-size: 50px;
+}
+
+h3, h4 {
+    font-family: Arial, sans-serif;
+    font-size: 28px; 
+    color: rgb(0, 251, 255);
+    margin-bottom: 10px; 
+}
+
+h2{
+    color:rgb(0, 251, 255);
+    font-size: 28px;
+}
+
+#amor{
+    color:rgb(0, 251, 255);
+    font-size: 30px;
+}
+
+#recoger {
+    color: black;
+    text-align: left;
+    width: 100%; 
+    height: 150px; 
+    margin-left: 0;
+    margin-top:0;
+}
+
+#carta {
+        color: black;
+        width: auto; 
+        margin: 5px;
+        margin-left: 0;
+        margin-top:0;
+        padding-top: 75px;
+        padding-left: 140px;
+        padding-right: 140px;
+        border-radius: 5px; /* Bordes redondeados */
+        display: inline-block; /* Ajustar al contenido */
+        max-width: 100%; /* Asegurar que no se desborde */
+        background-image: url('carta2.jpeg'); /* Ruta a tu imagen */
+        background-size: cover;
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        text-indent: 20px;
+    }
+
+.carta_foto{
+display: flex;
+justify-content: flex-end;
+width: 100%;
+}
+
+.carta_foto img{
+width: 30%;
+margin-right: 30px;
+margin-left: 40px;
+height: 600px;
+}
+
+.foto1{
+    display: flex;
+    justify-content: center;
+}
+
+.foto1 img{
+    width: 20%;
+    height: 400px;
+    margin: 20px;
+}
+
+.foto2{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.foto2 img{
+    width: 20%;
+    height: 400px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+body.index {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-color: #f0f0f0;
+    background-image: url('rosa.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+.login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    background-image: url('amor.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0 ;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+label[for="password"] {
+    font-family: 'Times New Roman', Times, serif; /* Cambia 'Arial' a la fuente que prefieras */
+    font-size: 22px; /* Cambia el tamaño de la fuente según prefieras */
+    color: rgb(0, 251, 255);; /* Cambia el color según prefieras */
+    font-weight: bold;
+}
+
+button {
+    width:100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+#videoCarousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#videoCarousel video {
+    display: none;
+}
+#videoCarousel video.active {
+    display: block;
+}
+
+.boton {
+    position: absolute;
+    top: 3700px;
+}
+
+video {
+    width: 40%;
+    height: 750px;
+ 
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+}
+
+.carousel-item {
+    display: none;
+    flex: 0 0 100%;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.arrow {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 30px; /* Ancho de las flechas */
+    height: 30px; /* Altura de las flechas */
+    position: absolute; /* Posición absoluta para colocar las flechas en los extremos */
+}
+
+.arrow.left {
+    left: 10px;
+    margin-left: 550px;
+}
+
+.arrow.right {
+    right: 10px;
+    margin-right: 550px;
+}
+
+form {
+    margin-top: 50px;
+}
+
+.vale1 {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+.vale1 img {
+    width: 50%;
+}
+
+#contraseña{
+    font-family: fantasy;
+    font-size: 25px;
+}
