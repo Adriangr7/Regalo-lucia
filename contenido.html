@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scake=1.0">
+        <title>Regalo Lucia</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body class="contenido">
+        <h1><u>¡Feliz cumpleaños!</u>💕</h1>
+        <h2 id="amor">CARTA</h2>
+        <div class="carta_foto">
+        <img src="comunion.jpg" alt="Descripcion de la imagen">
+        <p id="carta" class="marco">
+            Esta carta va dirigida a la persona que me ha demostrado que el amor real existe. Si tu, 
+            Lucia, mejor dicho, mi vida. Te escribo esta carta porque hace tiempo que no te hago este 
+            tipo de detalles que la verdad considero que son importantes hacerlas de vez en cuando, 
+            al mismo tiempo siendo un detalle bonito para hacer. Ya vamos camino de los dos años 
+            siendo pareja, afrontando una relación la cual es nuestra primera y en la que vamos 
+            aprendiendo cosas nuevas cada día. Siendo realistas no es todo un camino de rosas, 
+            como todo en esta vida tiene sus mas y sus menos, pero esos menos son los propulsores 
+            para que los mas resalten más. Que decirte que no sepas, en este tiempo que llevo 
+            conociéndote he aprendido mucho gracias a ti. Me has demostrado que hay personas con 
+            un gran corazón, dispuestas a dar todo el amor que llevan dentro a una persona la cual 
+            han depositado toda su confianza y amor en ella. Aquí entro yo, gracias por elegirme 
+            como persona a la cual demuestras tu amor y cariño. Gracias por darme ese amor que va 
+            dentro de ti, esa paz y tranquilidad que me das cada vez que estamos juntos. Esa 
+            sinceridad que te caracteriza, tanto para lo bueno como para lo malo. La verdad que eres 
+            una de esas pocas personas que todavía quedan en este planeta, dispuestas a darlo todo 
+            porque esta relación no tenga fin. Me siento muy afortunado de tenerte día tras día, de 
+            levantarme y lo primero que haga sea ver si me has dado los buenos dias. Me has 
+            cambiado la vida en muchos sentidos, todas positivas. Eres una persona verdaderamente 
+            increíble, alegre, carismatica y mil adjetivos mas que no puedo detallar porque seria 
+            limitarte, y tu no tienes techo. Quiero que esta relación se siga forjando cada día mas, que 
+            vaya mejorando y siguiendo por el buen camino que vamos. Como aspectos a mejorar me 
+            gustaría mejorar un poco mas la comunicación y las discusiones por tonterías. Creo que 
+            son los dos aspectos mas a mejorar actualmente. Por lo demás, pedirte que sigas siendo 
+            tu, que sigas siendo esa persona feliz, alegre, llena de amor y que nunca cambies, que 
+            vales mucho y nadie te puede apagar esa sonrisa. Espero que tu tambien estes contenta 
+            en como soy, como te trato y demás. Intento dar lo mejor de mi, aunque se que tengo 
+            varios aspectos a mejorar, los cuales te prometo que se mejoraran. Te amo mucho y 
+            gracias por elegirme cada día
+            Att. Adrian(El amor de tu vida)
+        </p>
+        </div>
+        <h3 class="Fotos">RECORDATORIO DE MOMENTOS VIVIDOS A TU LADO</h3>
+        <div class="foto1">
+        <img src="playa.jpg" alt="Descripcion de la imagen" class="imagen1">
+        <img src="feria.jpg" alt="Descripcion de la imagen" class="imagen2">
+        <img src="carnaval.jpg" alt="Descripcion de la imagen" class="imagen3">
+        </div>
+        <div class="foto2">
+        <img src="cueva.jpg" alt="Descripcion de la imagen" class="imagen4">
+        <img src="cadiz.jpg" alt="Descripcion de la imagen" class="imagen5">
+    </div>
+        <h4 class="Videos">VIDEOS</h4>
+        <div id="videoCarousel">
+            <button class="arrow left" onclick="previousVideo()">&#9664;</button>
+            <video class="active" controls>
+                <source src="lucia6.mp4" type="video/mp4">
+            </video>
+            <video controls>
+                <source src="lucia7.mp4" type="video/mp4">
+            </video>
+            <video controls>
+                <source src="lucia8.mp4" type="video/mp4">
+            </video>
+            <video controls>
+                <source src="lucia9.mp4" type="video/mp4">
+            </video>
+            <video controls>
+                <source src="lucia10.mp4" type="video/mp4">
+            </video>
+            <button class="arrow right" onclick="nextVideo()">&#9654;</button>
+        </div>
+
+        <form id="quizForm">
+            <h1><u>Cuestionario</u></h1>
+            <h3>Debes acertar todas las preguntas para obtener una recompensa. Todas las respuestas deben estar en minúsculas.</h3>
+            <p>¿Fecha en la que iniciamos nuestra relación? (Utilizar - para separar números)</p>
+            <input type="text" id="question1">
+            <p>¿Restaurante que más visitamos con diferencia?</p>
+            <input type="text" id="question2">
+            <p>¿Lugar/Restaurante en el que ocurrió nuestra primera cita?</p>
+            <input type="text" id="question3">
+            <p>¿Cómo se llama mi perra?</p>
+            <input type="text" id="question4">
+            <p>¿Cual es mi color favorito?</p>
+            <input type="text" id="question5">
+            <p>¿Soy el mejor novio del mundo?</p>
+            <input type="text" id="question6">
+            <p>¿Cuanto es (5*5+5)*3?</p>
+            <input type="text" id="question7">
+            <p>¿Cual fue la contraseña para poder entrar a esta página?</p>
+            <input type="text" id="question8">
+            <button type="submit">Enviar</button>
+        </form>
+        <script>
+            document.getElementById('quizForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+    
+                var correctAnswers = 0;
+    
+                var answer1 = document.getElementById('question1').value;
+                var answer2 = document.getElementById('question2').value;
+                var answer3 = document.getElementById('question3').value;
+                var answer4 = document.getElementById('question4').value;
+                var answer5 = document.getElementById('question5').value;
+                var answer6 = document.getElementById('question6').value;
+                var answer7 = document.getElementById('question7').value;
+                var answer8 = document.getElementById('question8').value;
+    
+    
+                if (answer1.toLowerCase() === '26-09-22') correctAnswers++;
+                if (answer2.toLowerCase() === 'lsan') correctAnswers++;
+                if (answer3.toLowerCase() === 'burger') correctAnswers++;
+                if (answer4.toLowerCase() === 'luna') correctAnswers++;
+                if (answer5.toLowerCase() === 'amarillo') correctAnswers++;
+                if (answer6.toLowerCase() === 'si') correctAnswers++;
+                if (answer7.toLowerCase() === '90') correctAnswers++;
+                if (answer8.toLowerCase() === 'lucia') correctAnswers++;
+    
+                if (correctAnswers === 8) {
+                    window.location.href = 'password.html';
+                } else {
+                    alert('Alguna respuesta es incorrecta. Intenta de nuevo.');
+                }
+            });
+        </script>
+        <script src="script.js"></script>
+    </body>
+</html>
