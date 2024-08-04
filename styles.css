@@ -68,7 +68,7 @@ h2 {
     max-width: 100%; /* Asegurar que no se desborde */
     background-image: url('carta2.jpeg'); /* Ruta a tu imagen */
     background-size: cover;
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-repeat: no-repeat; 
     text-indent: 1.25rem;
 }
 
