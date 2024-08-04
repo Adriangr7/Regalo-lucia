@@ -71,6 +71,12 @@
             <video controls>
                 <source src="lucia10.mp4" type="video/mp4">
             </video>
+            <video controls>
+                <source src="lucia11.mp4" type="video/mp4">
+            </video>
+            <video controls>
+                <source src="lucia12.mp4" type="video/mp4">
+            </video>
             <button class="arrow right" onclick="nextVideo()">&#9654;</button>
         </div>
 
@@ -89,9 +95,9 @@
             <input type="text" id="question5">
             <p>¿Soy el mejor novio del mundo?</p>
             <input type="text" id="question6">
-            <p>¿Cuanto es (5*5+5)*3?</p>
+            <p>¿Cuanto es (5+5*5)*3?</p>
             <input type="text" id="question7">
-            <p>¿Cual fue la contraseña para poder entrar a esta página?</p>
+            <p>Una familia se compone por dos padres y 6 hijos. Además, cada hijo tiene una hermana. ¿Cuántas personas hay?</p>
             <input type="text" id="question8">
             <button type="submit">Enviar</button>
         </form>
@@ -118,7 +124,7 @@
                 if (answer5.toLowerCase() === 'amarillo') correctAnswers++;
                 if (answer6.toLowerCase() === 'si') correctAnswers++;
                 if (answer7.toLowerCase() === '90') correctAnswers++;
-                if (answer8.toLowerCase() === 'lucia') correctAnswers++;
+                if (answer8.toLowerCase() === '9') correctAnswers++;
     
                 if (correctAnswers === 8) {
                     window.location.href = 'password.html';

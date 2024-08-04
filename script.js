@@ -9,7 +9,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     const password = document.getElementById('password').value;
 
     // Datos de prueba (en un entorno real, verifica en el servidor)
-    const validPassword = 'adri';
+    const validPassword = 'luciayadri26';
 
     if (password === validPassword) {
         // Redirigir a la página de contenido
@@ -21,6 +21,23 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 });
 
 let currentSlide = 0;
+
+function previousVideo() {
+    const carousel = document.getElementById('videoCarousel');
+    const videos = Array.from(carousel.getElementsByTagName('video'));
+    let activeIndex = videos.findIndex(video => video.classList.contains('active'));
+    
+    if (activeIndex !== -1) {
+        videos[activeIndex].pause(); // Pausar el video actual
+        videos[activeIndex].classList.remove('active'); // Quitar clase activa
+        
+        activeIndex = (activeIndex - 1 + videos.length) % videos.length; // Calcular nuevo índice
+        
+        videos[activeIndex].classList.add('active'); // Añadir clase activa al nuevo video
+        videos[activeIndex].play(); // Reproducir nuevo video
+    }
+}
+
 
 function nextVideo() {
     const carousel = document.getElementById('videoCarousel');
