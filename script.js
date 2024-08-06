@@ -9,7 +9,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     const password = document.getElementById('password').value;
 
     // Datos de prueba (en un entorno real, verifica en el servidor)
-    const validPassword = 'luciayadri26';
+    const validPassword = 'adriylucia26';
 
     if (password === validPassword) {
         // Redirigir a la página de contenido
