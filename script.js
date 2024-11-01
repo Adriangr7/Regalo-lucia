@@ -1,8 +1,3 @@
-document.addEventListener('DOMContentLoaded', function() {
-    console.log('Regalo lucia');
-    alert('¡FELIZ CUMPLEAÑOS!');
-});
-
 document.getElementById('loginForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
